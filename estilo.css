@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    /*espaçamento externo*/
+    margin: 0;
+    /*espaçamento interno*/
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /*variavel do css*/
+    --verde-escuro: #14424b;
+    --verde: #2f9364;
+    --orange: #ff7c37;
+    --degrande-btn: linear-gradient(#fe9611, #ff5c00);
+    --color-p: #a1a1a1;
+    --color-p-2: #868585;
+}
+
+.background-verde {
+    background: #14424b;
+}
+
+
+.container {
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+/*classes do site*/
+
+nav {
+    /*vao ficar um do lado do outro*/
+    display: flex;
+
+    /*um espaço entre os itens*/
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.ul li a {
+    /*Os dois primeiro sao pra cima,pra baixo(caso for so 1 vai ser cima/baixo)*/
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+.ul li a {
+    color: white;
+}
+
+/*section*/
+
+section,
+footer {
+    padding: 2.7rem 0;
+}
+
+
+.btn-gradient {
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-image: var(--degrande-btn);
+}
+
+
+
+
+/*Main*/
+
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-text {
+    width: 50%;
+    color: white;
+}
+
+.main-text h1 {
+    /*tamanhos maiores*/
+    font-size: 4.5rem;
+
+}
+
+.main-text div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-img {
+    width: 100%;
+}
+
+
+
+
+/*menu icon*/
+
+.menu-icon {
+    /*se usar o atributo none o icon fica escondido*/
+    display: none;
+
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+/*section classes (RESULTADOS)*/
+
+.resultados {
+    background-color: #ff7c37;
+}
+
+.resultados .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resultados-text {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+.resultados-numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.resultados-numeros p {
+
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+
+}
+
+.resultados-numeros p span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*diferencias e melhores_lugares*/
+
+
+.diferencias .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.diferencias .card {
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.diferencias .card:hover {
+    box-shadow: 0px 10px 67px 8px #e6e6fa85;
+}
+
+.diferencias .card img {
+    width: 60px;
+}
+
+.diferencias .card .titulo {
+
+    margin: 13px 0;
+    font-weight: 600;
+}
+
+/*section casa*/
+
+.casa .container {
+    display: flex;
+    align-items: center;
+}
+
+.casa .casa-img {
+    width: 50%;
+}
+
+.casa .casa-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.casa .casa-text {
+    width: 50%;
+    padding-left: 90px;
+}
+
+.casa .casa-text h1 {
+    font-size: 2.5rem;
+}
+
+.casa .casa-text p {
+    margin: 20px 0;
+    color: #a1a1a1;
+}
+
+.casa .casa-text p b {
+    font-size: 25px;
+    color: black;
+}
+
+/*section melhores_lugares*/
+
+.melhores_lugares .cards p {
+    color: var(--color-p-2);
+    font-size: 15px;
+}
+
+.melhores_lugares .azul {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0060f0;
+}
+
+.melhores_lugares h2 {
+    font-size: 2.5rem;
+}
+
+.melhores_lugares .cards {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.melhores_lugares .cards .card-item {
+    width: 30%;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0px 35px 69px -15px rgb(0, 0, 0, 0.08);
+}
+
+.card-item img {
+    width: 80px;
+}
+
+.melhores_lugares .cards button {
+    margin-top: 20px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--orange);
+}
+
+
+/*section newletter*/
+
+.newletter {
+    margin-top: 50px;
+    background-color: var(--verde);
+}
+
+.box-newletter {
+    text-align: center;
+    padding: 100px;
+    background-image: url(img/background-newsletter.png);
+    background-repeat: no-repeat;
+
+    /*pegar todo espaço da div*/
+    background-size: cover;
+
+    background-position: center;
+    border-radius: 10px;
+}
+
+.newletter .box-newletter h2 {
+    font-size: 2.5rem;
+}
+
+.newletter .box-newletter p {
+    margin: 13px 0;
+}
+
+.newletter .box-newletter input {
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+    color: #00000098;
+    background-color: #faefda;
+}
+
+.newletter .box-newletter button {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    background-color: var(--verde);
+    cursor: pointer;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: var(--verde-escuro);
+}
+
+footer .container {
+    display: flex;
+    color: white;
+}
+
+footer .container h3 {
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+footer .container ul {
+    width: 25%;
+}
+
+footer .container .redes_socias img {
+    margin-right: 10px;
+}
+
+footer .container ul>p {
+    margin-bottom: 40px;
+}
+
+footer .container li {
+    margin: 10px 0;
+}
+
+footer .container a {
+    color: white;
+}
+
+/*responsivo*/
+
+@media(max-width: 960px) {
+
+    /*footer*/
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .container ul {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /*section newletter responsivo*/
+
+    .newletter .box-newletter {
+        padding: 50px;
+    }
+
+    .newletter .box-newletter h2 {
+        font-size: 2rem;
+    }
+
+    .newletter .box-newletter input {
+        width: 90%;
+    }
+
+    .newletter .box-newletter button {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+
+    /*melhores_lugares responsivo */
+
+    .melhores_lugares .cards {
+        flex-direction: column;
+    }
+
+    .melhores_lugares .cards .card-item {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    /*section casa*/
+
+    .casa .container {
+        flex-direction: column-reverse;
+    }
+
+    .casa .casa-text,
+    .casa-img {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+
+
+    /*diferencias responsivo*/
+
+    .diferencias .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .diferencias .card {
+        width: 100%;
+    }
+
+    /*responsivo resultados*/
+
+    .resultados .container {
+        flex-direction: column;
+    }
+
+    .resultados .resultados-text,
+    .resultados-numeros {
+        width: 100%;
+        text-align: center;
+    }
+
+    .resultados-numeros {
+        margin-top: 30px;
+    }
+
+    /*responsivo menu-icon*/
+    /*vai ser ativada*/
+    .menu-icon {
+        display: block;
+    }
+
+    .ul {
+        align-items: center;
+        position: fixed;
+        background-color: #14424b;
+
+        /*modificaçao feita*/
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.3s;
+        justify-content: center;
+
+        /*coluna pra baixo*/
+        flex-direction: column;
+
+    }
+
+    .ul li {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .ul.ativo {
+        left: 0%;
+    }
+
+
+
+    /*main responsivo*/
+
+    main .container {
+        flex-direction: column;
+    }
+
+    /*se aplica aos dois  se colocar uma virgula*/
+    main .container .main-img,
+    main .container .main-tex {
+        width: 100%;
+        text-align: center;
+    }
+
+    main .container .main-tex h1 {
+        font-size: 4rem;
+    }
+
+    main .container .main-tex div {
+        justify-content: center;
+    }
+}
+
+
+/*ainda mais responsivos*/
+@media(max-width:440px) {
+
+
+    /*resultados*/
+    .resultados .resultados-numeros {
+        flex-direction: column;
+    }
+
+    /*main*/
+
+    main .container .main-tex h1 {
+        font-size: 3rem;
+    }
+
+}
